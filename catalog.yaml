@@ -32,7 +32,7 @@ tiers:
   premium:
     label: Premium
     note: premium members only
-    on_cards: true
+    on_cards: false
   public:
     label: Public
     note: open to everyone

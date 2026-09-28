@@ -17,16 +17,28 @@
     {
       "name": "agentic-seo-system",
       "tier": "standard",
-      "empty": true,
+      "empty": false,
       "url": "https://github.com/ai-seo-society/agentic-seo-system",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v2.68.0",
+          "published": "2026-09-28T19:14:37Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.68.0"
+        }
+      ]
     },
     {
       "name": "agentic-seo-system-app",
       "tier": "premium",
-      "empty": true,
+      "empty": false,
       "url": "https://github.com/ai-seo-society/agentic-seo-system-app",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v2.68.0",
+          "published": "2026-09-28T19:28:55Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.68.0"
+        }
+      ]
     },
     {
       "name": "gsc-anomaly-detection",

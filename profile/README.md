@@ -31,6 +31,40 @@ I build SEO systems, Claude Code skills and self-hosted apps. Each one runs on m
 
 ## What is inside
 
+### SEO systems
+
+The agents, skills and apps I run for my own sites and client work.
+
+<table>
+<tr>
+<td width="290" valign="top"><a href="https://github.com/ai-seo-society/agentic-seo-system"><img src="./assets/covers/agentic-seo-system.svg" width="280" alt="Agentic SEO System cover: a search result climbing from position five to position one"></a></td>
+<td valign="top">
+
+**[Agentic SEO System](https://github.com/ai-seo-society/agentic-seo-system)**<br>
+<sub><code>agentic-seo-system</code> · **v2.68.0** · 28 Sep 2026</sub>
+
+19 agents and 79 skills for Claude Code, wired to live APIs: rank tracking, backlinks, AI visibility, keywords and Search Console analytics.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="290" valign="top"><a href="https://github.com/ai-seo-society/agentic-seo-system-app"><img src="./assets/covers/agentic-seo-system-app.svg" width="280" alt="Agentic SEO System App cover: a local ranking grid, strongest in the centre"></a></td>
+<td valign="top">
+
+**[Agentic SEO System App](https://github.com/ai-seo-society/agentic-seo-system-app)**<br>
+<sub><code>agentic-seo-system-app</code> · **v2.68.0** · 28 Sep 2026</sub>
+
+The web app on top of the Agentic SEO System: rankings, local grids, backlinks, AI visibility and keywords for every client in one place.
+
+[Click through the demo, no signup →](https://demo.agentic-seo-system.com)
+
+</td>
+</tr>
+</table>
+
 ### Self-hosted apps
 
 They run on your machine or your own server. Your keys, your data, no service of mine in between.
@@ -71,6 +105,8 @@ Watches your Search Console clicks, impressions and positions. When something mo
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 28 Sep 2026 | Agentic SEO System App | [v2.68.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.68.0) |
+| 28 Sep 2026 | Agentic SEO System | [v2.68.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.68.0) |
 | 28 Sep 2026 | Agentic OS | [v2.1.2](https://github.com/ai-seo-society/agentic-os-application/releases/tag/v2.1.2) |
 | 28 Sep 2026 | GSC Anomaly Detection | [v1.0.0](https://github.com/ai-seo-society/gsc-anomaly-detection/releases/tag/v1.0.0) |
 

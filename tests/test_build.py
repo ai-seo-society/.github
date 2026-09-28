@@ -28,6 +28,9 @@ def site(tmp_path):
     shutil.copy(ROOT / build.TEMPLATE, tmp_path / build.TEMPLATE)
     catalog = yaml.safe_load((ROOT / build.CATALOG).read_text(encoding="utf-8"))
     catalog["on_the_way"]["show"] = True
+    # The fixture pins the card switches, so the tests do not follow the live page's settings.
+    catalog["tiers"]["standard"]["on_cards"] = False
+    catalog["tiers"]["premium"]["on_cards"] = True
     catalog["repos"] = {
         "alpha": {"name": "Alpha Tool", "category": "tools", "kicker": "CLI", "motif": "terminal",
                   "pitch": "Does one | thing well.", "stack": ["Python"]},
