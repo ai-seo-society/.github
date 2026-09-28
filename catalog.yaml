@@ -1,0 +1,110 @@
+# What the org profile says about each repository.
+#
+# This file holds WORDS only. Facts — which repos exist, who can see them (tier),
+# versions and release dates — come from GitHub via `refresh` (data/org.json), never
+# from here. Every repository a member tier can see needs an entry, or `check` fails.
+#
+# This repo is PUBLIC. No client names, no internal hosts, no prices.
+#
+# Rebuild after any edit:  uv run python -m profilegen build
+
+org: ai-seo-society
+
+community:
+  name: The AI SEO Society
+  url: https://www.skool.com/ai-automation-community
+
+# Link buttons under the header and in the footer, left to right.
+buttons:
+  - label: Start the free trial
+    url: https://www.skool.com/ai-automation-community/about
+    style: primary
+  - label: Agentic SEO System demo
+    url: https://demo.agentic-seo-system.com
+    style: secondary
+
+# How each tier is named on the page. The tier of a repo is read from GitHub.
+tiers:
+  standard:
+    label: All members
+    note: included in every membership
+    on_cards: false
+  premium:
+    label: Premium
+    note: premium members only
+    on_cards: true
+  public:
+    label: Public
+    note: open to everyone
+    on_cards: false
+
+# What each repo card shows besides name, version and pitch.
+# on_cards (per tier, above): name the tier on the card and its cover.
+# stack: the technology line under the pitch (from each entry's `stack`).
+cards:
+  stack: false
+
+# Repos with no commits yet. show: true lists them in their own teaser section (and
+# counts them in the summary line). show: false keeps them off the page entirely until
+# their first version lands; then they appear in their category on their own.
+on_the_way:
+  show: false
+  title: On the way
+  intro: Set up and being built. Each one moves into its section above with its first version.
+
+# Sections of "What is inside", in page order.
+categories:
+  - id: systems
+    title: SEO systems
+    intro: The agents, skills and apps I run for my own sites and client work.
+  - id: apps
+    title: Self-hosted apps
+    intro: They run on your machine or your own server. Your keys, your data, no service of mine in between.
+  - id: tools
+    title: Tools
+    intro: One job each. Set them up once; they run on a schedule and tell you when to look.
+
+# One entry per repository. motif: dashboard | anomaly | rank | grid | terminal | sparkle
+repos:
+  agentic-seo-system:
+    name: Agentic SEO System
+    category: systems
+    kicker: Claude Code system
+    motif: rank
+    pitch: >-
+      19 agents and 79 skills for Claude Code, wired to live APIs: rank tracking,
+      backlinks, AI visibility, keywords and Search Console analytics.
+    stack: [Claude Code, Python, DataForSEO, Firecrawl]
+
+  agentic-seo-system-app:
+    name: Agentic SEO System App
+    category: systems
+    kicker: Web app
+    motif: grid
+    pitch: >-
+      The web app on top of the Agentic SEO System: rankings, local grids, backlinks,
+      AI visibility and keywords for every client in one place.
+    stack: [Next.js, FastAPI, Claude Code]
+    links:
+      - label: Click through the demo, no signup
+        url: https://demo.agentic-seo-system.com
+
+  agentic-os-application:
+    name: Agentic OS
+    category: apps
+    kicker: Self-hosted app
+    motif: dashboard
+    pitch: >-
+      Tracks competitors, your social and YouTube numbers, and changes on pages you
+      watch. Tells you when something moves. Runs in one Docker container.
+    stack: [Docker, Next.js, SQLite]
+
+  gsc-anomaly-detection:
+    name: GSC Anomaly Detection
+    category: tools
+    kicker: Python CLI
+    motif: anomaly
+    pitch: >-
+      Watches your Search Console clicks, impressions and positions. When something
+      moves more than its history says it should, you get one email.
+    stack: [Python, Search Console API]

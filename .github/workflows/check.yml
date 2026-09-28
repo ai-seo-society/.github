@@ -1,0 +1,20 @@
+# Proves on every push that profile/README.md and every image equal a fresh build,
+# and runs the tests. Needs no secrets and no network beyond installing packages:
+# `build` is a pure function of the files in this repo. The deny-list is private and
+# stays on the maintainer's machine, so here the privacy gate runs the secret rules only.
+name: check
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run pytest
+      - run: uv run python -m profilegen check

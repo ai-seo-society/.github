@@ -1,0 +1,92 @@
+<title>AI SEO Society Profile</title>
+<style>
+:root {
+  --bg: #f6f8fa; --canvas: #ffffff; --ink: #1f2328; --muted: #59636e; --line: #d1d9e0;
+  --seg: #eef1f4; --seg-on: #ffffff; --focus: #0969da;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #010409; --canvas: #0d1117; --ink: #f0f6fc; --muted: #9198a1; --line: #3d444d;
+    --seg: #151b23; --seg-on: #262c36; --focus: #4493f8;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #010409; --canvas: #0d1117; --ink: #f0f6fc; --muted: #9198a1; --line: #3d444d;
+  --seg: #151b23; --seg-on: #262c36; --focus: #4493f8;
+}
+body { background: var(--bg); color: var(--ink);
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; }
+.bar { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.org { display: flex; gap: 14px; align-items: center; min-width: 0; }
+.org img { width: 56px; height: 56px; border-radius: 8px; border: 1px solid var(--line); flex: none; }
+.org h1 { font-size: 22px; font-weight: 600; margin: 0; line-height: 1.2; }
+.org p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; }
+.seg { display: inline-flex; background: var(--seg); border: 1px solid var(--line); border-radius: 8px; padding: 2px; gap: 2px; }
+.seg button { font: inherit; font-size: 12px; color: var(--muted); background: transparent; border: 0; border-radius: 6px;
+  padding: 5px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--seg-on); color: var(--ink); font-weight: 600; box-shadow: 0 0 0 1px var(--line); }
+.seg button:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.note { color: var(--muted); font-size: 12px; margin: 0 0 16px; max-width: 70ch; }
+.stage { transition: max-width .2s ease; margin: 0 auto; max-width: 100%; }
+.stage[data-width="phone"] { max-width: 390px; }
+.frame { border: 1px solid; border-radius: 6px; overflow: hidden; }
+.frame[data-gh="light"] { border-color: #d1d9e0; background: #ffffff; }
+.frame[data-gh="dark"] { border-color: #3d444d; background: #0d1117; }
+.frame .markdown-body { padding: 24px; }
+.stage[data-width="phone"] .frame .markdown-body { padding: 16px; }
+.frame .markdown-body table { display: block; overflow-x: auto; }
+[data-gh="light"] .hdr-dark, [data-gh="dark"] .hdr-light { display: none; }
+@media (prefers-reduced-motion: reduce) { .stage { transition: none; } }
+{{css_light}}
+{{css_dark}}
+</style>
+<div class="wrap">
+  <div class="bar">
+    <div class="org">
+      <img src="{{avatar}}" alt="">
+      <div><h1>{{org_name}}</h1><p>github.com/{{org}} · {{state}}</p></div>
+    </div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="GitHub theme">
+        <button type="button" id="gh-light" data-gh="light">Light</button>
+        <button type="button" id="gh-dark" data-gh="dark">Dark</button>
+      </div>
+      <div class="seg" role="group" aria-label="Screen width">
+        <button type="button" id="w-desktop" data-w="desktop" aria-pressed="true">Desktop</button>
+        <button type="button" id="w-phone" data-w="phone" aria-pressed="false">Phone</button>
+      </div>
+    </div>
+  </div>
+  <p class="note">Rendered by GitHub's own Markdown API from <code>profile/README.md</code>, with the generated SVGs inlined. On GitHub the header follows the visitor's light or dark setting; here the Light and Dark buttons switch it.</p>
+  <div class="stage" id="stage" data-width="desktop">
+    <div class="frame" id="frame" data-gh="light">
+      <article class="markdown-body">
+{{body}}
+      </article>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var frame = document.getElementById('frame'), stage = document.getElementById('stage');
+  function setGh(mode) {
+    frame.setAttribute('data-gh', mode);
+    document.querySelectorAll('button[data-gh]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-gh') === mode));
+    });
+  }
+  function setW(w) {
+    stage.setAttribute('data-width', w);
+    document.querySelectorAll('button[data-w]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-w') === w)); });
+  }
+  var root = document.documentElement.getAttribute('data-theme');
+  var dark = root ? root === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  setGh(dark ? 'dark' : 'light');
+  document.querySelectorAll('button[data-gh]').forEach(function (b) { b.addEventListener('click', function () { setGh(b.getAttribute('data-gh')); }); });
+  document.querySelectorAll('button[data-w]').forEach(function (b) { b.addEventListener('click', function () { setW(b.getAttribute('data-w')); }); });
+})();
+</script>

@@ -1,0 +1,25 @@
+[project]
+name = "ai-seo-society-profile"
+version = "1.0.0"
+description = "Generator for the ai-seo-society organization profile README and its artwork."
+requires-python = ">=3.11"
+dependencies = [
+    # catalog.yaml is hand-edited; YAML keeps the pitches readable and commentable.
+    "pyyaml>=6.0",
+    # Glyph outlines from the vendored fonts, so every SVG carries its text as paths
+    # and renders identically in every browser and in GitHub's image proxy.
+    "fonttools>=4.50",
+    # Kerning and shaping for those outlines; without it headlines look hand-set.
+    "uharfbuzz>=0.40",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

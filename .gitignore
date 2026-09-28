@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+# local-only notes never reach this public repo
+_private/
+*.private.*
+CLAUDE.local.md
+.preview/

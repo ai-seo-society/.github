@@ -1,0 +1,6 @@
+# Not a product: never run the release skill here.
+#
+# This repo is the organization's public profile and is developed in place; its history
+# is public by design. `mode: direct` allows plain `git push` from this checkout.
+target: ai-seo-society/.github
+mode: direct

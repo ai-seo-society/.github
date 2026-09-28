@@ -1,0 +1,93 @@
+# Keeps the org page current without anyone at a keyboard.
+#
+# Every hour, and whenever a release asks for it, this reads the org from GitHub,
+# rebuilds the page and publishes the result if a FACT changed: a version, a date, a
+# tier, a repo leaving "On the way". It never writes words. A repo that members can see
+# but catalog.yaml does not list stays off the page until Marvin approves its pitch
+# (the org-profile skill). The daily run then fails, which sends the owner an email.
+#
+# Off until two repository secrets exist (Settings > Secrets and variables > Actions):
+#   ORG_READ_TOKEN  fine-grained token, owner ai-seo-society, all repositories,
+#                   read-only: Administration, Contents, Metadata
+#   PROFILE_TIERS   the `tiers` map of the private release config, as JSON
+#
+# This repo is public and so are its Actions logs: the engine runs with --ci, which
+# never prints the name of a repo the catalog does not list. Never add pull_request
+# triggers here: a pull request from a fork must not run with these secrets.
+name: autopilot
+
+on:
+  schedule:
+    - cron: "17 * * * *"  # hourly: facts
+    - cron: "5 7 * * *"   # daily: facts, and fail if a repo is waiting for its entry
+  workflow_dispatch:      # `gh workflow run autopilot.yml -R ai-seo-society/.github` after a release
+  repository_dispatch:
+    types: [profile-refresh]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autopilot
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Is the autopilot switched on?
+        id: on
+        env:
+          TOKEN: ${{ secrets.ORG_READ_TOKEN }}
+          TIERS: ${{ secrets.PROFILE_TIERS }}
+        run: |
+          if [ -n "$TOKEN" ] && [ -n "$TIERS" ]; then
+            echo "yes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Autopilot is off: add the ORG_READ_TOKEN and PROFILE_TIERS secrets to switch it on."
+            echo "yes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.on.outputs.yes == 'true'
+
+      - uses: astral-sh/setup-uv@v6
+        if: steps.on.outputs.yes == 'true'
+
+      - name: Refresh from GitHub, rebuild, check
+        id: update
+        if: steps.on.outputs.yes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
+          PROFILE_TIERS: ${{ secrets.PROFILE_TIERS }}
+        run: |
+          uv sync --locked
+          set +e
+          uv run python -m profilegen update --ci
+          code=$?
+          set -e
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          # 0 = current and complete, 4 = current but a repo waits for its entry: both publishable
+          if [ "$code" -ne 0 ] && [ "$code" -ne 4 ]; then exit "$code"; fi
+
+      - name: Publish fact changes
+        if: steps.on.outputs.yes == 'true'
+        run: |
+          git add -- data/org.json profile
+          if git diff --cached --quiet; then
+            echo "The page was already current."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Refresh from GitHub" -m "Facts only: versions, dates, tiers. Written by the autopilot workflow."
+          git push
+
+      - name: A repository is waiting for its catalog entry
+        if: >-
+          steps.on.outputs.yes == 'true' && steps.update.outputs.code == '4' &&
+          (github.event_name != 'schedule' || github.event.schedule == '5 7 * * *')
+        run: |
+          echo "::error::A repository members can see has no entry in catalog.yaml, so the page leaves it out. Run the org-profile skill."
+          exit 1
