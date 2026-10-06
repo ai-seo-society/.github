@@ -52,6 +52,19 @@
           "url": "https://github.com/ai-seo-society/gsc-anomaly-detection/releases/tag/v1.0.0"
         }
       ]
+    },
+    {
+      "name": "jevseo",
+      "tier": "standard",
+      "empty": false,
+      "url": "https://github.com/ai-seo-society/jevseo",
+      "releases": [
+        {
+          "tag": "v0.1.0",
+          "published": "2026-10-05T20:29:17Z",
+          "url": "https://github.com/ai-seo-society/jevseo/releases/tag/v0.1.0"
+        }
+      ]
     }
   ]
 }

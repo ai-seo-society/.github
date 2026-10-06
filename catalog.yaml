@@ -108,3 +108,13 @@ repos:
       Watches your Search Console clicks, impressions and positions. When something
       moves more than its history says it should, you get one email.
     stack: [Python, Search Console API]
+
+  jevseo:
+    name: Jev SEO
+    category: tools
+    kicker: Python CLI
+    motif: terminal
+    pitch: >-
+      An SEO audit your AI agent runs. Crawl and Search Console data become
+      ranked, tracked fixes and an offline client report with a prompt for each task.
+    stack: [Python, Claude Code, Search Console API]

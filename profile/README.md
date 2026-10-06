@@ -101,10 +101,25 @@ Watches your Search Console clicks, impressions and positions. When something mo
 </tr>
 </table>
 
+<table>
+<tr>
+<td width="290" valign="top"><a href="https://github.com/ai-seo-society/jevseo"><img src="./assets/covers/jevseo.svg" width="280" alt="Jev SEO cover: a terminal running commands"></a></td>
+<td valign="top">
+
+**[Jev SEO](https://github.com/ai-seo-society/jevseo)**<br>
+<sub><code>jevseo</code> · **v0.1.0** · 5 Oct 2026</sub>
+
+An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tracked fixes and an offline client report with a prompt for each task.
+
+</td>
+</tr>
+</table>
+
 ## Latest releases
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 5 Oct 2026 | Jev SEO | [v0.1.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.1.0) |
 | 28 Sep 2026 | Agentic SEO System App | [v2.68.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.68.0) |
 | 28 Sep 2026 | Agentic SEO System | [v2.68.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.68.0) |
 | 28 Sep 2026 | Agentic OS | [v2.1.2](https://github.com/ai-seo-society/agentic-os-application/releases/tag/v2.1.2) |
