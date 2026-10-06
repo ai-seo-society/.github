@@ -41,7 +41,7 @@ The agents, skills and apps I run for my own sites and client work.
 <td valign="top">
 
 **[Agentic SEO System](https://github.com/ai-seo-society/agentic-seo-system)**<br>
-<sub><code>agentic-seo-system</code> · **v2.68.0** · 28 Sep 2026</sub>
+<sub><code>agentic-seo-system</code> · **v2.74.3** · 6 Oct 2026</sub>
 
 19 agents and 79 skills for Claude Code, wired to live APIs: rank tracking, backlinks, AI visibility, keywords and Search Console analytics.
 
@@ -55,7 +55,7 @@ The agents, skills and apps I run for my own sites and client work.
 <td valign="top">
 
 **[Agentic SEO System App](https://github.com/ai-seo-society/agentic-seo-system-app)**<br>
-<sub><code>agentic-seo-system-app</code> · **v2.68.0** · 28 Sep 2026</sub>
+<sub><code>agentic-seo-system-app</code> · **v2.74.3** · 6 Oct 2026</sub>
 
 The web app on top of the Agentic SEO System: rankings, local grids, backlinks, AI visibility and keywords for every client in one place.
 
@@ -119,11 +119,12 @@ An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tr
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 6 Oct 2026 | Agentic SEO System App | [v2.74.3](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.74.3) |
+| 6 Oct 2026 | Agentic SEO System | [v2.74.3](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.74.3) |
 | 5 Oct 2026 | Jev SEO | [v0.1.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.1.0) |
 | 28 Sep 2026 | Agentic SEO System App | [v2.68.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.68.0) |
 | 28 Sep 2026 | Agentic SEO System | [v2.68.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.68.0) |
 | 28 Sep 2026 | Agentic OS | [v2.1.2](https://github.com/ai-seo-society/agentic-os-application/releases/tag/v2.1.2) |
-| 28 Sep 2026 | GSC Anomaly Detection | [v1.0.0](https://github.com/ai-seo-society/gsc-anomaly-detection/releases/tag/v1.0.0) |
 
 ## Getting in
 
