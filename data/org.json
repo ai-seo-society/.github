@@ -21,6 +21,11 @@
       "url": "https://github.com/ai-seo-society/agentic-seo-system",
       "releases": [
         {
+          "tag": "v2.76.1",
+          "published": "2026-10-15T13:40:46Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.76.1"
+        },
+        {
           "tag": "v2.75.4",
           "published": "2026-10-13T16:09:11Z",
           "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.75.4"
@@ -48,6 +53,11 @@
       "empty": false,
       "url": "https://github.com/ai-seo-society/agentic-seo-system-app",
       "releases": [
+        {
+          "tag": "v2.76.1",
+          "published": "2026-10-15T13:48:53Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.76.1"
+        },
         {
           "tag": "v2.75.4",
           "published": "2026-10-13T16:17:21Z",
