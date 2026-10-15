@@ -81,6 +81,19 @@
       ]
     },
     {
+      "name": "claudex",
+      "tier": "standard",
+      "empty": false,
+      "url": "https://github.com/ai-seo-society/claudex",
+      "releases": [
+        {
+          "tag": "v1.0.0",
+          "published": "2026-10-15T20:28:31Z",
+          "url": "https://github.com/ai-seo-society/claudex/releases/tag/v1.0.0"
+        }
+      ]
+    },
+    {
       "name": "gsc-anomaly-detection",
       "tier": "standard",
       "empty": false,

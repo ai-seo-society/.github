@@ -62,7 +62,7 @@ categories:
     intro: They run on your machine or your own server. Your keys, your data, no service of mine in between.
   - id: tools
     title: Tools
-    intro: One job each. Set them up once; they run on a schedule and tell you when to look.
+    intro: Every one solves a real-world problem, runs on its own, and is easy to extend.
 
 # One entry per repository. motif: dashboard | anomaly | rank | grid | terminal | sparkle
 repos:
@@ -118,3 +118,13 @@ repos:
       An SEO audit your AI agent runs. Crawl and Search Console data become
       ranked, tracked fixes and an offline client report with a prompt for each task.
     stack: [Python, Claude Code, Search Console API]
+
+  claudex:
+    name: Claudex
+    category: tools
+    kicker: Claude Code plugin
+    motif: sparkle
+    pitch: >-
+      Claude hands token-heavy jobs to the OpenAI Codex CLI: big files, long logs,
+      screenshots. Only the answer comes back. Codex makes and edits images.
+    stack: [Claude Code, Codex CLI, bash]

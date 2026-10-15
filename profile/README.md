@@ -85,7 +85,21 @@ Tracks competitors, your social and YouTube numbers, and changes on pages you wa
 
 ### Tools
 
-One job each. Set them up once; they run on a schedule and tell you when to look.
+Every one solves a real-world problem, runs on its own, and is easy to extend.
+
+<table>
+<tr>
+<td width="290" valign="top"><a href="https://github.com/ai-seo-society/claudex"><img src="./assets/covers/claudex.svg" width="280" alt="Claudex cover: the pixel star of the AI SEO Society"></a></td>
+<td valign="top">
+
+**[Claudex](https://github.com/ai-seo-society/claudex)**<br>
+<sub><code>claudex</code> · **v1.0.0** · 15 Oct 2026</sub>
+
+Claude hands token-heavy jobs to the OpenAI Codex CLI: big files, long logs, screenshots. Only the answer comes back. Codex makes and edits images.
+
+</td>
+</tr>
+</table>
 
 <table>
 <tr>
@@ -119,12 +133,12 @@ An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tr
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 15 Oct 2026 | Claudex | [v1.0.0](https://github.com/ai-seo-society/claudex/releases/tag/v1.0.0) |
 | 15 Oct 2026 | Agentic SEO System App | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.76.1) |
 | 15 Oct 2026 | Agentic SEO System | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.76.1) |
 | 13 Oct 2026 | Agentic SEO System App | [v2.75.4](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.75.4) |
 | 13 Oct 2026 | Agentic SEO System | [v2.75.4](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.75.4) |
 | 9 Oct 2026 | Agentic SEO System App | [v2.74.4](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.74.4) |
-| 9 Oct 2026 | Agentic SEO System | [v2.74.4](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.74.4) |
 
 ## Getting in
 
