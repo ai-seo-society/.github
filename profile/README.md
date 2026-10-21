@@ -121,7 +121,7 @@ Watches your Search Console clicks, impressions and positions. When something mo
 <td valign="top">
 
 **[Jev SEO](https://github.com/ai-seo-society/jevseo)**<br>
-<sub><code>jevseo</code> · **v0.2.0** · 18 Oct 2026</sub>
+<sub><code>jevseo</code> · **v0.3.0** · 21 Oct 2026</sub>
 
 An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tracked fixes and an offline client report with a prompt for each task.
 
@@ -133,12 +133,12 @@ An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tr
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 21 Oct 2026 | Jev SEO | [v0.3.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.3.0) |
 | 18 Oct 2026 | Jev SEO | [v0.2.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.2.0) |
 | 15 Oct 2026 | Claudex | [v1.0.0](https://github.com/ai-seo-society/claudex/releases/tag/v1.0.0) |
 | 15 Oct 2026 | Agentic SEO System App | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.76.1) |
 | 15 Oct 2026 | Agentic SEO System | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.76.1) |
 | 13 Oct 2026 | Agentic SEO System App | [v2.75.4](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.75.4) |
-| 13 Oct 2026 | Agentic SEO System | [v2.75.4](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.75.4) |
 
 ## Getting in
 
