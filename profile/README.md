@@ -41,7 +41,7 @@ The agents, skills and apps I run for my own sites and client work.
 <td valign="top">
 
 **[Agentic SEO System](https://github.com/ai-seo-society/agentic-seo-system)**<br>
-<sub><code>agentic-seo-system</code> · **v2.76.1** · 15 Oct 2026</sub>
+<sub><code>agentic-seo-system</code> · **v2.77.0** · 21 Oct 2026</sub>
 
 19 agents and 79 skills for Claude Code, wired to live APIs: rank tracking, backlinks, AI visibility, keywords and Search Console analytics.
 
@@ -55,7 +55,7 @@ The agents, skills and apps I run for my own sites and client work.
 <td valign="top">
 
 **[Agentic SEO System App](https://github.com/ai-seo-society/agentic-seo-system-app)**<br>
-<sub><code>agentic-seo-system-app</code> · **v2.76.1** · 15 Oct 2026</sub>
+<sub><code>agentic-seo-system-app</code> · **v2.77.0** · 21 Oct 2026</sub>
 
 The web app on top of the Agentic SEO System: rankings, local grids, backlinks, AI visibility and keywords for every client in one place.
 
@@ -133,12 +133,12 @@ An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tr
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 21 Oct 2026 | Agentic SEO System | [v2.77.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.77.0) |
+| 21 Oct 2026 | Agentic SEO System App | [v2.77.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.77.0) |
 | 21 Oct 2026 | Jev SEO | [v0.3.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.3.0) |
 | 18 Oct 2026 | Jev SEO | [v0.2.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.2.0) |
 | 15 Oct 2026 | Claudex | [v1.0.0](https://github.com/ai-seo-society/claudex/releases/tag/v1.0.0) |
 | 15 Oct 2026 | Agentic SEO System App | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.76.1) |
-| 15 Oct 2026 | Agentic SEO System | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.76.1) |
-| 13 Oct 2026 | Agentic SEO System App | [v2.75.4](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.75.4) |
 
 ## Getting in
 
