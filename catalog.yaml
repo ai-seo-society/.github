@@ -128,3 +128,23 @@ repos:
       Claude hands token-heavy jobs to the OpenAI Codex CLI: big files, long logs,
       screenshots. Only the answer comes back. Codex makes and edits images.
     stack: [Claude Code, Codex CLI, bash]
+
+  claude-mod-kit:
+    name: Claude Mod Kit
+    category: tools
+    kicker: Claude Code mods
+    motif: terminal
+    pitch: >-
+      Five mods that draw inside Claude Code: what it loaded, the subagents at work, a
+      guard before a risky delete. Each one only reads, unless it says so.
+    stack: [Claude Code, TypeScript]
+
+  shadcn-ui-library:
+    name: Pattern Library
+    category: tools
+    kicker: Pattern library
+    motif: dashboard
+    pitch: >-
+      25 working shadcn/ui screens you install as source, plus the rule set your coding
+      agent follows. All beta: no accessibility review yet.
+    stack: [Next.js, shadcn/ui, Base UI, Tailwind]

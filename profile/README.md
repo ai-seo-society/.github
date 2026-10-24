@@ -89,6 +89,20 @@ Every one solves a real-world problem, runs on its own, and is easy to extend.
 
 <table>
 <tr>
+<td width="290" valign="top"><a href="https://github.com/ai-seo-society/claude-mod-kit"><img src="./assets/covers/claude-mod-kit.svg" width="280" alt="Claude Mod Kit cover: a terminal running commands"></a></td>
+<td valign="top">
+
+**[Claude Mod Kit](https://github.com/ai-seo-society/claude-mod-kit)**<br>
+<sub><code>claude-mod-kit</code> · **v0.1.0** · 19 Oct 2026</sub>
+
+Five mods that draw inside Claude Code: what it loaded, the subagents at work, a guard before a risky delete. Each one only reads, unless it says so.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
 <td width="290" valign="top"><a href="https://github.com/ai-seo-society/claudex"><img src="./assets/covers/claudex.svg" width="280" alt="Claudex cover: the pixel star of the AI SEO Society"></a></td>
 <td valign="top">
 
@@ -129,16 +143,30 @@ An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tr
 </tr>
 </table>
 
+<table>
+<tr>
+<td width="290" valign="top"><a href="https://github.com/ai-seo-society/shadcn-ui-library"><img src="./assets/covers/shadcn-ui-library.svg" width="280" alt="Pattern Library cover: a dashboard with KPI tiles, a bar chart and an alert"></a></td>
+<td valign="top">
+
+**[Pattern Library](https://github.com/ai-seo-society/shadcn-ui-library)**<br>
+<sub><code>shadcn-ui-library</code> · **v0.9.0** · 22 Oct 2026</sub>
+
+25 working shadcn/ui screens you install as source, plus the rule set your coding agent follows. All beta: no accessibility review yet.
+
+</td>
+</tr>
+</table>
+
 ## Latest releases
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 22 Oct 2026 | Pattern Library | [v0.9.0](https://github.com/ai-seo-society/shadcn-ui-library/releases/tag/v0.9.0) |
 | 21 Oct 2026 | Agentic SEO System | [v2.77.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.77.0) |
 | 21 Oct 2026 | Agentic SEO System App | [v2.77.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.77.0) |
 | 21 Oct 2026 | Jev SEO | [v0.3.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.3.0) |
+| 19 Oct 2026 | Claude Mod Kit | [v0.1.0](https://github.com/ai-seo-society/claude-mod-kit/releases/tag/v0.1.0) |
 | 18 Oct 2026 | Jev SEO | [v0.2.0](https://github.com/ai-seo-society/jevseo/releases/tag/v0.2.0) |
-| 15 Oct 2026 | Claudex | [v1.0.0](https://github.com/ai-seo-society/claudex/releases/tag/v1.0.0) |
-| 15 Oct 2026 | Agentic SEO System App | [v2.76.1](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.76.1) |
 
 ## Getting in
 
