@@ -126,6 +126,11 @@
       "url": "https://github.com/ai-seo-society/jevseo",
       "releases": [
         {
+          "tag": "v0.4.0",
+          "published": "2026-10-25T21:10:22Z",
+          "url": "https://github.com/ai-seo-society/jevseo/releases/tag/v0.4.0"
+        },
+        {
           "tag": "v0.3.0",
           "published": "2026-10-21T16:09:13Z",
           "url": "https://github.com/ai-seo-society/jevseo/releases/tag/v0.3.0"
