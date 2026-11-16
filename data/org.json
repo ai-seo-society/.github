@@ -21,6 +21,16 @@
       "url": "https://github.com/ai-seo-society/agentic-seo-system",
       "releases": [
         {
+          "tag": "v2.85.1",
+          "published": "2026-11-16T23:46:53Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.85.1"
+        },
+        {
+          "tag": "v2.85.0",
+          "published": "2026-11-16T11:06:35Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.85.0"
+        },
+        {
           "tag": "v2.84.0",
           "published": "2026-11-12T13:31:51Z",
           "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.84.0"
@@ -34,16 +44,6 @@
           "tag": "v2.80.0",
           "published": "2026-11-08T01:28:24Z",
           "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.80.0"
-        },
-        {
-          "tag": "v2.79.2",
-          "published": "2026-11-04T21:04:20Z",
-          "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.79.2"
-        },
-        {
-          "tag": "v2.78.0",
-          "published": "2026-11-01T12:41:35Z",
-          "url": "https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.78.0"
         }
       ]
     },
@@ -53,6 +53,11 @@
       "empty": false,
       "url": "https://github.com/ai-seo-society/agentic-seo-system-app",
       "releases": [
+        {
+          "tag": "v2.85.1",
+          "published": "2026-11-16T23:38:23Z",
+          "url": "https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.85.1"
+        },
         {
           "tag": "v2.84.0",
           "published": "2026-11-12T13:44:38Z",
@@ -72,11 +77,6 @@
           "tag": "v2.79.2",
           "published": "2026-11-04T21:17:43Z",
           "url": "https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.79.2"
-        },
-        {
-          "tag": "v2.78.0",
-          "published": "2026-11-01T12:55:56Z",
-          "url": "https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.78.0"
         }
       ]
     },

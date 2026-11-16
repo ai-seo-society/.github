@@ -41,7 +41,7 @@ The agents, skills and apps I run for my own sites and client work.
 <td valign="top">
 
 **[Agentic SEO System](https://github.com/ai-seo-society/agentic-seo-system)**<br>
-<sub><code>agentic-seo-system</code> · **v2.84.0** · 12 Nov 2026</sub>
+<sub><code>agentic-seo-system</code> · **v2.85.1** · 16 Nov 2026</sub>
 
 19 agents and 79 skills for Claude Code, wired to live APIs: rank tracking, backlinks, AI visibility, keywords and Search Console analytics.
 
@@ -55,7 +55,7 @@ The agents, skills and apps I run for my own sites and client work.
 <td valign="top">
 
 **[Agentic SEO System App](https://github.com/ai-seo-society/agentic-seo-system-app)**<br>
-<sub><code>agentic-seo-system-app</code> · **v2.84.0** · 12 Nov 2026</sub>
+<sub><code>agentic-seo-system-app</code> · **v2.85.1** · 16 Nov 2026</sub>
 
 The web app on top of the Agentic SEO System: rankings, local grids, backlinks, AI visibility and keywords for every client in one place.
 
@@ -161,12 +161,12 @@ An SEO audit your AI agent runs. Crawl and Search Console data become ranked, tr
 
 | Date | Repository | Release |
 |:--|:--|:--|
+| 16 Nov 2026 | Agentic SEO System | [v2.85.1](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.85.1) |
+| 16 Nov 2026 | Agentic SEO System App | [v2.85.1](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.85.1) |
+| 16 Nov 2026 | Agentic SEO System | [v2.85.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.85.0) |
 | 12 Nov 2026 | Agentic SEO System App | [v2.84.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.84.0) |
 | 12 Nov 2026 | Agentic SEO System | [v2.84.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.84.0) |
 | 11 Nov 2026 | Agentic SEO System App | [v2.81.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.81.0) |
-| 11 Nov 2026 | Agentic SEO System | [v2.81.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.81.0) |
-| 8 Nov 2026 | Agentic SEO System App | [v2.80.0](https://github.com/ai-seo-society/agentic-seo-system-app/releases/tag/v2.80.0) |
-| 8 Nov 2026 | Agentic SEO System | [v2.80.0](https://github.com/ai-seo-society/agentic-seo-system/releases/tag/v2.80.0) |
 
 ## Getting in
 
